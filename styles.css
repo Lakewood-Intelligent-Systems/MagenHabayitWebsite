@@ -620,3 +620,17 @@ details p {
 .eyebrow, .number {
   color: #805c28;
 }
+
+/* A modest portrait accompanies the founder's own statement. */
+.founder-portrait {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 14px;
+  border: 5px solid #f0e7d7;
+  margin: 26px 0 18px;
+}
