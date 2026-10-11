@@ -10,7 +10,7 @@ PUBLIC_FILES = (
     'index.html', 'donate.html', 'receive-aid.html', 'contract-with-us.html',
     'styles.css', '_headers',
     'robots.txt', 'sitemap.xml', 'assets/home.svg',
-    'assets/zelle-qr.png', 'assets/zelle-qr.pdf',
+    'assets/zelle-qr.png', 'assets/zelle-qr.pdf', 'assets/logo.png',
 )
 
 

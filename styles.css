@@ -1,11 +1,11 @@
 /* Shared palette and spacing keep both pages consistent. No external fonts or trackers. */
 :root {
-  --navy:#143c50;
-  --ink:#203b46;
-  --gold:#e4b967;
-  --cream:#faf8f2;
-  --muted:#536870;
-  --line:#dce2df;
+  --navy:#064777;
+  --ink:#183b56;
+  --gold:#dcebf5;
+  --cream:#ffffff;
+  --muted:#526779;
+  --line:#dce6ed;
 }
 
 * {
@@ -24,7 +24,7 @@ a {
 }
 
 a:focus-visible,summary:focus-visible {
-  outline:3px solid #ae751d;
+  outline:3px solid #064777;
   outline-offset:5px;
 }
 
@@ -103,7 +103,7 @@ nav a[aria-current=page] {
 }
 
 .button:hover {
-  background:#edc981;
+  background:#c6dfef;
 }
 
 .button.secondary {
@@ -117,7 +117,7 @@ nav a[aria-current=page] {
   letter-spacing:2.4px;
   font-size:12px;
   font-weight:750;
-  color:#89621f;
+  color:#064777;
   margin:0 0 16px;
 }
 
@@ -169,7 +169,7 @@ p {
 }
 
 .art {
-  background:#e8eee8;
+  background:#eef5fa;
   border-radius:130px 130px 12px 12px;
   padding:25px;
   position:relative;
@@ -229,7 +229,7 @@ p {
 .number {
   font-family:Georgia,serif;
   font-size:36px;
-  color:#947037;
+  color:#064777;
   margin-bottom:20px;
 }
 
@@ -254,7 +254,7 @@ p {
 }
 
 .quote-section {
-  background:#eaf0ea;
+  background:#eef5fa;
 }
 
 .quote-layout {
@@ -378,7 +378,7 @@ blockquote footer {
 
 .badge {
   white-space:nowrap;
-  background:#e8eee8;
+  background:#eef5fa;
   border-radius:25px;
   padding:7px 15px;
   font-size:12px;
@@ -569,5 +569,35 @@ details p {
   }
   .footer a {
     margin: 0;
+  }
+}
+
+/* The supplied logo leads the blue-and-white brand on every page. */
+.brand-logo {
+  display: block;
+  width: 154px;
+  height: auto;
+}
+.logo-art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+}
+.logo-art img {
+  width: 100%;
+  height: auto;
+}
+.logo-art .art-caption {
+  color: var(--navy);
+  padding-top: 12px;
+}
+@media (max-width: 760px) {
+  .brand-logo {
+    width: 130px;
   }
 }
