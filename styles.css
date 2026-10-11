@@ -2,10 +2,10 @@
 :root {
   --navy:#064777;
   --ink:#183b56;
-  --gold:#dcebf5;
-  --cream:#ffffff;
+  --gold:#edc785;
+  --cream:#fbf8f2;
   --muted:#526779;
-  --line:#dce6ed;
+  --line:#e5dfd4;
 }
 
 * {
@@ -103,7 +103,7 @@ nav a[aria-current=page] {
 }
 
 .button:hover {
-  background:#c6dfef;
+  background:#e6b96d;
 }
 
 .button.secondary {
@@ -169,7 +169,7 @@ p {
 }
 
 .art {
-  background:#eef5fa;
+  background:#f3ede2;
   border-radius:130px 130px 12px 12px;
   padding:25px;
   position:relative;
@@ -254,7 +254,7 @@ p {
 }
 
 .quote-section {
-  background:#eef5fa;
+  background:#f3ede2;
 }
 
 .quote-layout {
@@ -378,7 +378,7 @@ blockquote footer {
 
 .badge {
   white-space:nowrap;
-  background:#eef5fa;
+  background:#f3ede2;
   border-radius:25px;
   padding:7px 15px;
   font-size:12px;
@@ -600,4 +600,21 @@ details p {
   .brand-logo {
     width: 130px;
   }
+}
+
+/* Warm neutrals complement the blue logo without changing its artwork. */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgb(70 54 30 / 4%);
+}
+.quote-section {
+  background: #f3ede2;
+}
+.logo-art {
+  border: 8px solid #f0e7d7;
+  border-radius: 28px;
+  box-shadow: 0 12px 32px rgb(70 54 30 / 6%);
+}
+.eyebrow, .number {
+  color: #805c28;
 }
