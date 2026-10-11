@@ -7,7 +7,8 @@ ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / 'dist' / 'magenhabayit-site.zip'
 SITE_DIRECTORY = ROOT / 'dist' / 'site'
 PUBLIC_FILES = (
-    'index.html', 'donate.html', 'styles.css', '_headers',
+    'index.html', 'donate.html', 'receive-aid.html', 'contract-with-us.html',
+    'styles.css', '_headers',
     'robots.txt', 'sitemap.xml', 'assets/home.svg',
     'assets/zelle-qr.png', 'assets/zelle-qr.pdf',
 )

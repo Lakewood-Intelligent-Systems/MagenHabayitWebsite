@@ -55,7 +55,7 @@ npx --yes wrangler@4.149.0 deploy --dry-run --config wrangler.jsonc
 npx --yes wrangler@4.149.0 dev --local --config wrangler.jsonc
 ```
 
-The script creates `dist/site` for Wrangler and `dist/magenhabayit-site.zip` as a downloadable copy. Only the nine explicitly listed public files are included. Git metadata, internal documentation, deployment configuration, and workflow files are excluded.
+The script creates `dist/site` for Wrangler and `dist/magenhabayit-site.zip` as a downloadable copy. Only the explicitly listed public files are included. Git metadata, internal documentation, deployment configuration, and workflow files are excluded.
 
 The workflow runs the packaging command and a pinned Wrangler deployment CLI. There is no npm application dependency installation or build step.
 

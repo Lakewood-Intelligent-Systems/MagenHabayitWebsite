@@ -535,3 +535,39 @@ details p {
     gap: 20px;
   }
 }
+
+/* Application pages use hosted forms, keeping sensitive answers off this site. */
+.application-page {
+  max-width: 850px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.application-card {
+  margin-top: 32px;
+}
+.application-card h2 {
+  font-size: 32px;
+}
+.application-card .button {
+  margin-top: 24px;
+}
+.application-card .note {
+  margin-top: 18px;
+}
+@media (max-width: 900px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .header nav {
+    flex-wrap: wrap;
+    gap: 14px 20px;
+  }
+  .footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer a {
+    margin: 0;
+  }
+}

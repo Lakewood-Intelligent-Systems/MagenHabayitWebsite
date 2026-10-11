@@ -47,3 +47,7 @@ No tax-deductibility, registration, impact totals, contact details, or payment p
 See [DEPLOYMENT.md](DEPLOYMENT.md) for upload and domain setup. Run `python tools/package_site.py` to generate a curated deployment ZIP. Cloudflare Workers Static Assets security headers, canonical URLs for `magenhabayit.org`, robots.txt, and a sitemap are included.
 
 Cloudflare Workers Builds is the primary automatic deployment method. `.github/workflows/deploy.yml` is a manual-only fallback. See DEPLOYMENT.md for dashboard commands and optional GitHub credentials.
+
+## Application forms
+
+`/receive-aid` links to the family Google Form. `/contract-with-us` links to the contractor responder form, rather than its editor. Both pages open hosted forms in a new tab; no application information is collected on this website. The form owner must publish forms and enable the intended responder access.
