@@ -1,0 +1,5 @@
+# Generated deployment archives; rebuild from source with tools/package_site.py.
+dist/
+__pycache__/
+# Wrangler's generated local runtime state.
+.wrangler/

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://unpkg.com/wrangler@4.149.0/config-schema.json",
+  // The Worker is created by the first deployment. No Pages project is needed.
+  "name": "magenhabayit",
+  "compatibility_date": "2026-10-11",
+  "workers_dev": true,
+  "preview_urls": false,
+  // Serve the curated static files directly, without a Worker script.
+  "assets": {
+    "directory": "./dist/site",
+    "html_handling": "auto-trailing-slash"
+  }
+  // Attach magenhabayit.org in the Worker's dashboard after the first deploy.
+  // Keeping domain setup there avoids granting DNS permissions to CI.
+}

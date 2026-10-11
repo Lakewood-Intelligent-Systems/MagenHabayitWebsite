@@ -1,0 +1,56 @@
+name: Manual deployment to Cloudflare Workers
+
+# Cloudflare Workers Builds deploys pushes automatically.
+# Keep this workflow as an optional manual fallback to avoid duplicate deployments.
+on:
+  workflow_dispatch:
+
+# The deployment needs only repository read access, not GitHub write access.
+permissions:
+  contents: read
+
+# Serialize production deployments so an older run cannot finish after a newer one.
+concurrency:
+  group: cloudflare-workers-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # Manual runs on other branches must not publish to production.
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Check required configuration
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo 'Missing repository variable CLOUDFLARE_ACCOUNT_ID'; exit 1; }
+          test -n "$CLOUDFLARE_API_TOKEN" || { echo 'Missing repository secret CLOUDFLARE_API_TOKEN'; exit 1; }
+
+      - name: Package public website files
+        run: python tools/package_site.py
+
+      # Upload the curated directory, never the repository or the ZIP itself.
+      - name: Deploy to Cloudflare Workers
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CI: 'true'
+          WRANGLER_SEND_METRICS: 'false'
+        run: >-
+          npx --yes wrangler@4.149.0 deploy --config wrangler.jsonc
