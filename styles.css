@@ -577,6 +577,8 @@ details p {
   display: block;
   width: 154px;
   height: auto;
+  /* Blend the logo’s white background into the cream header. */
+  mix-blend-mode: multiply;
 }
 .logo-art {
   display: flex;
