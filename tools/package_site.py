@@ -11,6 +11,8 @@ PUBLIC_FILES = (
     'styles.css', '_headers',
     'robots.txt', 'sitemap.xml', 'assets/home.svg',
     'assets/zelle-qr.png', 'assets/zelle-qr.pdf', 'assets/logo.png', 'assets/isaac-solway.png',
+    'assets/rabbi-shneur-silberberg-letter.jpg', 'assets/rabbi-shmuel-irons-letter.jpg',
+    'assets/step-repair-01.jpg', 'assets/step-repair-02.jpg', 'assets/step-repair-03.jpg',
 )
 
 

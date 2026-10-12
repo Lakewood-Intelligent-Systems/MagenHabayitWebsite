@@ -634,3 +634,74 @@ details p {
   border: 5px solid #f0e7d7;
   margin: 26px 0 18px;
 }
+
+/* Neutralize the photographed paper's color cast without changing document text. */
+.approval-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+.approval-card, .repair-card {
+  margin: 0;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.approval-card > a {
+  display: block;
+  background: white;
+  padding: 18px;
+}
+.approval-letter {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.approval-letter-silberberg {
+  filter: grayscale(1) contrast(2) brightness(1.05);
+}
+.approval-letter-irons {
+  filter: grayscale(1) brightness(1.5) contrast(1.65);
+}
+.approval-card figcaption {
+  padding: 22px;
+  border-top: 1px solid var(--line);
+}
+.approval-card figcaption a {
+  font-size: 14px;
+  text-underline-offset: 4px;
+}
+.repair-section {
+  background: #f3ede2;
+}
+.repair-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.repair-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.repair-card figcaption {
+  padding: 22px;
+}
+.repair-stage {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #805c28;
+}
+.repair-card h3 {
+  margin: 0;
+}
+@media (max-width: 760px) {
+  .approval-grid, .repair-gallery {
+    grid-template-columns: 1fr;
+  }
+}
