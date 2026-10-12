@@ -635,7 +635,7 @@ details p {
   margin: 26px 0 18px;
 }
 
-/* Neutralize the photographed paper's color cast without changing document text. */
+/* Display the original letters without image processing. */
 .approval-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -657,12 +657,6 @@ details p {
   display: block;
   width: 100%;
   height: auto;
-}
-.approval-letter-silberberg {
-  filter: grayscale(1) brightness(0.65) contrast(4) brightness(1.4);
-}
-.approval-letter-irons {
-  filter: grayscale(1) brightness(1.2) contrast(2.4);
 }
 .approval-card figcaption {
   padding: 22px;
@@ -704,11 +698,4 @@ details p {
   .approval-grid, .repair-gallery {
     grid-template-columns: 1fr;
   }
-}
-/* Keep the written portion readable; links retain each full original page. */
-.approval-letter {
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  object-position: top;
 }
