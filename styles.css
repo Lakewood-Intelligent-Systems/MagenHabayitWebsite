@@ -263,6 +263,16 @@ p {
   gap:65px;
 }
 
+.testimonials {
+  display: grid;
+  gap: 36px;
+}
+
+.testimonials blockquote + blockquote {
+  border-top: 1px solid #d8ccba;
+  padding-top: 36px;
+}
+
 blockquote {
   margin:0;
   font:24px/1.6 Georgia,serif;
