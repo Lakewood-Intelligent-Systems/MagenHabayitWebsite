@@ -708,12 +708,15 @@ details p {
 }
 .project-carousel-controls button {
   font: inherit;
+  font-size: 20px;
+  line-height: 1;
   color: inherit;
   background: white;
   border: 1px solid currentColor;
   border-radius: 6px;
   min-height: 44px;
-  padding: 6px 14px;
+  min-width: 44px;
+  padding: 6px;
   cursor: pointer;
 }
 .project-slide img {

@@ -3,6 +3,7 @@ const container = carousel.querySelector('.project-carousel-slides');
 const slides = [...container.querySelectorAll('.project-slide')];
 const controls = carousel.querySelector('.project-carousel-controls');
 const rotation = carousel.querySelector('[data-rotation]');
+const rotationIcon = rotation.querySelector('span');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let order = [...slides];
 let index = 0;
@@ -38,7 +39,8 @@ function advance() {
 
 function setPlaying(value) {
   playing = value;
-  rotation.textContent = playing ? 'Pause' : 'Play';
+  rotationIcon.textContent = playing ? '⏸︎' : '▶︎';
+  rotation.setAttribute('aria-label', playing ? 'Pause slideshow' : 'Play slideshow');
   container.setAttribute('aria-live', playing ? 'off' : 'polite');
   window.clearInterval(timer);
   if (playing) {
