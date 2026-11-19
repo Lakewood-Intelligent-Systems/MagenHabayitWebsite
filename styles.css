@@ -719,6 +719,23 @@ details p {
   padding: 6px;
   cursor: pointer;
 }
+.project-carousel-controls [data-rotation] {
+  display: grid;
+  place-items: center;
+}
+.rotation-icon {
+  width: 0;
+  height: 0;
+  border-block: 7px solid transparent;
+  border-left: 11px solid currentColor;
+}
+[data-playing] .rotation-icon {
+  box-sizing: border-box;
+  width: 12px;
+  height: 14px;
+  border: 0;
+  border-inline: 3px solid currentColor;
+}
 .project-slide img {
   aspect-ratio: 4 / 3;
   max-height: 420px;
