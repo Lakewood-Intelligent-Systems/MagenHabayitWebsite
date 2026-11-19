@@ -14,6 +14,9 @@ PUBLIC_FILES = (
     'assets/rabbi-shneur-silberberg-letter.jpg', 'assets/rabbi-shmuel-irons-letter.jpg',
     'assets/step-repair-01.jpg', 'assets/step-repair-02.jpg', 'assets/step-repair-03.jpg', 'assets/step-repair-04.jpg',
     'assets/pipe-repair-before.jpg', 'assets/pipe-repair-after.jpg',
+    'assets/bathroom-floor-before-1.jpg', 'assets/bathroom-floor-before-2.jpg',
+    'assets/bathroom-floor-during-1.jpg', 'assets/bathroom-floor-during-2.jpg',
+    'assets/bathroom-floor-after-1.jpg', 'assets/bathroom-floor-after-2.jpg',
 )
 
 

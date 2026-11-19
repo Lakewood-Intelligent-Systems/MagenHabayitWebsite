@@ -694,6 +694,13 @@ details p {
 .repair-card figcaption {
   padding: 22px;
 }
+.bathroom-gallery-stage + .bathroom-gallery-stage {
+  margin-top: 28px;
+}
+.bathroom-gallery-stage .repair-card img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
 .repair-stage {
   display: block;
   margin-bottom: 10px;
