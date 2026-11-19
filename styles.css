@@ -700,6 +700,31 @@ details p {
 .bathroom-gallery-stage .repair-card img {
   aspect-ratio: 4 / 3;
 }
+.project-carousel-controls:not([hidden]) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.project-carousel-controls button {
+  font: inherit;
+  color: inherit;
+  background: white;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  min-height: 44px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+.project-slide img {
+  aspect-ratio: 4 / 3;
+  max-height: 420px;
+  object-fit: contain;
+  background: #f3ede2;
+}
+.project-slide a {
+  font-weight: 700;
+}
 .repair-stage {
   display: block;
   margin-bottom: 10px;

@@ -8,7 +8,7 @@ OUTPUT = ROOT / 'dist' / 'magenhabayit-site.zip'
 SITE_DIRECTORY = ROOT / 'dist' / 'site'
 PUBLIC_FILES = (
     'index.html', 'donate.html', 'receive-aid.html', 'contract-with-us.html',
-    'styles.css', '_headers',
+    'our-work.html', 'styles.css', 'project-carousel.js', '_headers',
     'robots.txt', 'sitemap.xml', 'assets/home.svg',
     'assets/zelle-qr.png', 'assets/zelle-qr.pdf', 'assets/logo.png', 'assets/isaac-solway.png',
     'assets/rabbi-shneur-silberberg-letter.jpg', 'assets/rabbi-shmuel-irons-letter.jpg',

@@ -1,10 +1,11 @@
 # Magen Habayit
 
-A responsive, two-page nonprofit website built with plain HTML and CSS. No build step, JavaScript, external fonts, or application dependencies are required.
+A responsive nonprofit website built with plain HTML and CSS. A small JavaScript file rotates the homepage project gallery. No build step, external fonts, or application dependencies are required.
 
 ## Plan and design
 
-- `index.html`: About us, mission, the 50/50 assistance program, repair examples, Isaac’s founder statement, the supplied family testimonial, and donation calls to action.
+- `index.html`: About us, mission, the 50/50 assistance program, completed-project carousel, Isaac’s founder statement, and donation calls to action.
+- `our-work.html`: Full project galleries and family testimonials.
 - `donate.html`: Zelle link and QR, recipient confirmation, original downloadable PDF, payment guidance, and future payment options.
 - `styles.css`: Shared navy, warm gold, cream, and sage palette; serif headings and system-font body text; mobile layouts, visible keyboard focus, and skip navigation.
 - `assets/home.svg`: Original home illustration. The design uses familiar nonprofit conventions without copying another organization's branding, artwork, text, or layout.

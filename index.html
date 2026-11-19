@@ -9,6 +9,7 @@
 <title>About us | Magen Habayit
 </title>
 <link rel="stylesheet" href="styles.css">
+<script src="project-carousel.js" defer></script>
 </head>
 
 <body><a class="skip" href="#main">Skip to content</a>
@@ -16,6 +17,7 @@
 <div class="wrap header"><a class="brand" href="index.html" aria-label="Magen Habayit home"><img class="brand-logo" src="assets/logo.png" alt="Magen HaBayit" width="154" height="103"></a>
 <nav aria-label="Main navigation">
   <a href="index.html" aria-current="page">About us</a>
+  <a href="our-work.html">Our work</a>
   <a href="receive-aid.html">Receive aid</a>
   <a href="contract-with-us.html">Contract with us</a>
   <a href="donate.html" class="button">Donate</a>
@@ -42,6 +44,32 @@
 <div class="wrap"><span><strong>50%</strong> of eligible repair costs covered</span><span>Practical help for essential repairs</span><span>Support when families need a hand</span>
 </div>
 </div>
+
+<section class="wrap section" aria-labelledby="completed-projects-title" data-project-carousel>
+  <div class="section-head">
+    <h2 id="completed-projects-title">Completed projects</h2>
+    <a href="our-work.html">See all projects and testimonials</a>
+  </div>
+  <div class="project-carousel-controls" hidden>
+    <button type="button" data-rotation>Pause</button>
+    <button type="button" data-previous>Previous</button>
+    <button type="button" data-next>Next</button>
+  </div>
+  <div class="project-carousel-slides" aria-live="off">
+    <figure class="repair-card project-slide">
+      <img src="assets/bathroom-floor-after-2.jpg" alt="Finished bathroom floor viewed from the doorway" width="1536" height="2040">
+      <figcaption><a href="our-work.html#bathroom-floor-title">A new bathroom floor</a></figcaption>
+    </figure>
+    <figure class="repair-card project-slide" hidden>
+      <img src="assets/pipe-repair-after.jpg" alt="New pipe and fittings installed in the open wall" width="1057" height="2048">
+      <figcaption><a href="our-work.html#pipe-repair-title">Pipe repair</a></figcaption>
+    </figure>
+    <figure class="repair-card project-slide" hidden>
+      <img src="assets/step-repair-04.jpg" alt="Completed concrete step beside the entrance railing" width="1280" height="935">
+      <figcaption><a href="our-work.html#repair-title">Step replacement</a></figcaption>
+    </figure>
+  </div>
+</section>
 
 <section class="wrap section">
 <div class="section-head">
@@ -120,134 +148,6 @@
     </figure>
   </div>
 </section>
-<section class="repair-section section" aria-labelledby="bathroom-floor-title">
-  <div class="wrap">
-    <div class="section-head">
-      <h2 id="bathroom-floor-title">A new bathroom floor</h2>
-      <p>The tile installer took on this bathroom repair at an exceptionally reasonable rate. He approached the job like an artist, bringing meticulous care to every cut and joint. He also arranged for tiles from another job site to be donated to Magen Habayit. With the tiles provided free of charge, both the family and Magen Habayit paid less for the repair.</p>
-      <p>Seeing the right craftsman and the donated materials come together for this family was an inspiring example of <em>hashgacha pratis</em> (Divine Providence).</p>
-    </div>
-    <section class="bathroom-gallery-stage" aria-labelledby="bathroom-floor-before">
-      <h3 id="bathroom-floor-before">Before</h3>
-      <div class="repair-gallery">
-        <figure class="repair-card">
-          <a href="assets/bathroom-floor-before-1.jpg" target="_blank" rel="noopener noreferrer" aria-label="View bathroom floor before photo 1 (new tab)">
-            <img src="assets/bathroom-floor-before-1.jpg" alt="Old bathroom flooring pulled back beside the toilet" width="1204" height="1599" loading="lazy">
-          </a>
-        </figure>
-        <figure class="repair-card">
-          <a href="assets/bathroom-floor-before-2.jpg" target="_blank" rel="noopener noreferrer" aria-label="View bathroom floor before photo 2 (new tab)">
-            <img src="assets/bathroom-floor-before-2.jpg" alt="Old flooring peeled back to expose the surface underneath beside the tub" width="1600" height="1204" loading="lazy">
-          </a>
-        </figure>
-      </div>
-    </section>
-    <section class="bathroom-gallery-stage" aria-labelledby="bathroom-floor-during">
-      <h3 id="bathroom-floor-during">During</h3>
-      <div class="repair-gallery">
-        <figure class="repair-card">
-          <a href="assets/bathroom-floor-during-1.jpg" target="_blank" rel="noopener noreferrer" aria-label="View bathroom floor during photo 1 (new tab)">
-            <img src="assets/bathroom-floor-during-1.jpg" alt="New floor tiles being fitted along the wall with spacers" width="1600" height="900" loading="lazy">
-          </a>
-        </figure>
-        <figure class="repair-card">
-          <a href="assets/bathroom-floor-during-2.jpg" target="_blank" rel="noopener noreferrer" aria-label="View bathroom floor during photo 2 (new tab)">
-            <img src="assets/bathroom-floor-during-2.jpg" alt="Partly tiled bathroom floor with leveling clips and installation tools" width="2040" height="1536" loading="lazy">
-          </a>
-        </figure>
-      </div>
-    </section>
-    <section class="bathroom-gallery-stage" aria-labelledby="bathroom-floor-after">
-      <h3 id="bathroom-floor-after">After</h3>
-      <div class="repair-gallery">
-        <figure class="repair-card">
-          <a href="assets/bathroom-floor-after-1.jpg" target="_blank" rel="noopener noreferrer" aria-label="View bathroom floor after photo 1 (new tab)">
-            <img src="assets/bathroom-floor-after-1.jpg" alt="Finished tile floor viewed from the bathroom doorway" width="1200" height="1600" loading="lazy">
-          </a>
-        </figure>
-        <figure class="repair-card">
-          <a href="assets/bathroom-floor-after-2.jpg" target="_blank" rel="noopener noreferrer" aria-label="View bathroom floor after photo 2 (new tab)">
-            <img src="assets/bathroom-floor-after-2.jpg" alt="Completed bathroom floor with the toilet reinstalled beside the vanity" width="1536" height="2040" loading="lazy">
-          </a>
-        </figure>
-      </div>
-    </section>
-  </div>
-</section>
-
-<section class="repair-section section" aria-labelledby="pipe-repair-title">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Before &amp; after</p>
-      <h2 id="pipe-repair-title">Pipe repair.</h2>
-      <p>A look at the work before and after replacing a pipe, with the surrounding wall still open.</p>
-    </div>
-    <div class="repair-gallery">
-      <figure class="repair-card">
-        <a href="assets/pipe-repair-before.jpg" target="_blank" rel="noopener noreferrer" aria-label="View pipe repair before photo (new tab)"><img src="assets/pipe-repair-before.jpg" alt="Opened wall exposing the plumbing before pipe replacement, with tools in the work area" width="1057" height="2048" loading="lazy"></a>
-        <figcaption><span class="repair-stage">01</span><h3>Before</h3></figcaption>
-      </figure>
-      <figure class="repair-card">
-        <a href="assets/pipe-repair-after.jpg" target="_blank" rel="noopener noreferrer" aria-label="View pipe repair after photo (new tab)"><img src="assets/pipe-repair-after.jpg" alt="Replacement pipe and fittings installed along the open wall" width="1057" height="2048" loading="lazy"></a>
-        <figcaption><span class="repair-stage">02</span><h3>After pipe replacement</h3></figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<section class="repair-section section" aria-labelledby="repair-title">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">A repair, step by step</p>
-      <h2 id="repair-title">A step toward a safer home.</h2>
-      <p>A closer look at a step repair, from damaged concrete to the completed replacement step.</p>
-    </div>
-    <!-- Photos follow the supplied four-stage repair sequence. -->
-    <div class="repair-gallery">
-      <figure class="repair-card">
-        <a href="assets/step-repair-01.jpg" target="_blank" rel="noopener noreferrer" aria-label="View repair photo 1: Before (new tab)"><img src="assets/step-repair-01.jpg" alt="Damaged concrete beside the entrance steps and railing" width="1200" height="1280" loading="lazy"></a>
-        <figcaption><span class="repair-stage">01</span><h3>Before</h3></figcaption>
-      </figure>
-      <figure class="repair-card">
-        <a href="assets/step-repair-02.jpg" target="_blank" rel="noopener noreferrer" aria-label="View repair photo 2: Damaged material removed (new tab)"><img src="assets/step-repair-02.jpg" alt="Removed concrete pieces collected beside the walkway" width="1200" height="1280" loading="lazy"></a>
-        <figcaption><span class="repair-stage">02</span><h3>Damaged material removed</h3></figcaption>
-      </figure>
-      <figure class="repair-card">
-        <a href="assets/step-repair-03.jpg" target="_blank" rel="noopener noreferrer" aria-label="View repair photo 3: Area cleared (new tab)"><img src="assets/step-repair-03.jpg" alt="Cleared area alongside the steps during the repair" width="1200" height="1280" loading="lazy"></a>
-        <figcaption><span class="repair-stage">03</span><h3>Area cleared</h3></figcaption>
-      </figure>
-      <figure class="repair-card">
-        <a href="assets/step-repair-04.jpg" target="_blank" rel="noopener noreferrer" aria-label="View repair photo 4: Completed repair (new tab)"><img src="assets/step-repair-04.jpg" alt="Completed replacement concrete step beside the entrance railing" width="1280" height="935" loading="lazy"></a>
-        <figcaption><span class="repair-stage">04</span><h3>Completed repair</h3></figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<section class="quote-section section">
-<div class="wrap quote-layout">
-<div>
-<p class="eyebrow">Families' experiences
-</p>
-<h2>Help when it mattered most.
-</h2>
-<p>Families share their experiences with our founder, Isaac.
-</p>
-</div>
-<div class="testimonials">
-<blockquote>
-<p>“Due to a serious leak in the kitchen that went down to the basement, and a moldy smell began to spread. In a house with children, this is an emergency. We called Isaac from Magen HaBayit and he contacted a licensed plumber, and in a short time they came to take care of the problem. It was much-needed help. Isaac is a champion at providing tools for any emergency.”
-</p>
-<footer>— A family helped by Magen Habayit
-</footer>
-</blockquote>
-<blockquote>
-<p>“Twice we had some serious plumbing issues in our home. A leaking faucet handle that was traveling under the sink and down into the basement. Isaac from Magen Habayit was able to switch out the faucet for one I had on standby but was unable to install. Then a couple months later on Rosh Hashanah a slight fracture on a connecting part for the instahot caused a significant leak into the basement. With the costs of Tishrei weighing down on our shoulders we turned once again to Isaac and he quickly jumped into action, speaking to a licensed plumber who was able to fix it the next day. B'H. The plumbers did high-quality work and were very professional.”</p>
-<footer>— A family recently helped by Magen Habayit</footer>
-</blockquote>
-</div>
-</div>
-</section>
 <section class="cta">
 <h2>Be part of a family's helping hand.
 </h2>
@@ -256,7 +156,7 @@
 </section>
 </main>
 <footer class="wrap footer"><span>Magen Habayit · Helping keep homes safe and functional.</span>
-<div><a href="index.html">About us</a><a href="donate.html">Donate</a><a href="receive-aid.html">Receive aid</a><a href="contract-with-us.html">Contract with us</a>
+<div><a href="index.html">About us</a><a href="our-work.html">Our work</a><a href="donate.html">Donate</a><a href="receive-aid.html">Receive aid</a><a href="contract-with-us.html">Contract with us</a>
 </div>
 </footer>
 </body></html>
